@@ -360,7 +360,7 @@ $active_page = $_GET['page'] ?? 'dashboard';
             if (file_exists($page_file)) {
                 include $page_file;
             } else {
-                include 'pages/dashboard.php';
+                include 'dashboard.php';
             }
             ?>
         </div>

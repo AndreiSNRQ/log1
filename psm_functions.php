@@ -1,7 +1,7 @@
 <?php
 // psm_functions.php
 require_once 'db_config.php';
-require_once 'psm_functions.php';
+require_once 'sws_functions.php';
 $procurement = new Procurement();
 $result = $procurement->addVendor(
     "Suppliers", 

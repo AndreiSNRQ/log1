@@ -170,7 +170,7 @@ class SmartWarehousing {
                 $po_id = $conn->insert_id;
                 
                 // Add purchase order item
-                $item_sql = "INSERT INTO po_items (po_id, item_id, quantity, unit_price) 
+                $item_sql = "INSERT INTpeO po_items (po_id, item_id, quantity, unit_price) 
                              VALUES (?, ?, ?, 0.00)";
                 $item_stmt = $conn->prepare($item_sql);
                 $item_stmt->bind_param("iii", $po_id, $item_id, $quantity);
