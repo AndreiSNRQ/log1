@@ -4,15 +4,20 @@ require_once 'db_config.php';
 session_start();
 
 // Check if user is logged in
-if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit();
-}
+// if (!isset($_SESSION['user_id'])) {
+//     header("Location: index.php");`x
+//     exit();
+// }
 
-// Get current user info
-$user_id = $_SESSION['user_id'];
-$username = $_SESSION['username'] ?? 'Administrator';
-$role = $_SESSION['role'] ?? 'admin';
+// // Get current user info
+// $user_id = $_SESSION['user_id'];
+// $username = $_SESSION['username'] ?? 'Administrator';
+// $role = $_SESSION['role'] ?? 'admin';
+
+$user_id = 1; // Placeholder for user ID
+$username = 'Administrator'; // Placeholder for username
+$role = 'admin'; // Placeholder for role
+
 
 // Set active page
 $active_page = $_GET['page'] ?? 'dashboard';
